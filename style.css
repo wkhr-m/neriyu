@@ -1,0 +1,181 @@
+:root {
+  --bg-color: #f8f6e9;
+  --main-color: #2863a5;
+  --second-color: #656565;
+}
+body {
+  color: var(--main-color);
+  background-color: var(--bg-color);
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  contain: content;
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.last-section {
+  height: auto;
+}
+h1 {
+  font-family: 'East Sea Dokdo', cursive;
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 400;
+}
+h2 {
+  font-family: 'East Sea Dokdo', cursive;
+  margin: 0 0 2rem;
+  font-weight: 400;
+  font-size: 3.6rem;
+}
+button {
+  background-image: url('../assets/btn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: #fff;
+  border: none;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  width: 80%;
+  max-width: 200px;
+  max-width: 500px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+}
+
+.button-transparent {
+  height: auto;
+  background-image: none;
+  background-color: transparent;
+  color: var(--main-color);
+  font-size: 1.2rem;
+}
+.button-icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  padding: 0;
+  background-color: transparent;
+}
+.kakao {
+  background-image: url('../assets/kakaotalk-icon.png');
+}
+.facebook {
+  background-image: url('../assets/facebook-icon.png');
+}
+.line {
+  background-image: url('../assets/line-icon.png');
+}
+.link {
+  background-image: url('../assets/link.png');
+}
+
+.top {
+  gap: 6%;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.top-img {
+  object-fit: cover;
+  width: 20%;
+  min-width: 200px;
+}
+.top-msg {
+  font-size: 2rem;
+  font-family: 'East Sea Dokdo', cursive;
+}
+.msg-text {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.msg-dogeza-img {
+  width: 80%;
+  max-width: 300px;
+}
+
+.event-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+}
+.event-sub {
+  font-size: 1.4rem;
+  margin: 0 0 2rem;
+}
+.event-img {
+  margin: 0 0 2rem;
+}
+.event-explain {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 1.6rem;
+}
+.event-finish {
+  font-size: 0.9rem;
+}
+.location-name {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.location-text {
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+.location-subtitle {
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.location-aaa {
+  height: 40px;
+}
+.footer {
+  gap: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+.footer-text {
+  font-size: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0 1rem;
+}
+
+.credit {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
