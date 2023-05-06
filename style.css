@@ -87,6 +87,9 @@ button {
 }
 .link {
   background-image: url('./assets/link.png');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .top {
