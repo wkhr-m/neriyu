@@ -3,6 +3,10 @@
   --main-color: #2863a5;
   --second-color: #656565;
 }
+html {
+  scroll-snap-type: block mandatory;
+  scroll-snap-stop: always;
+}
 body {
   color: var(--main-color);
   background-color: var(--bg-color);
@@ -13,8 +17,6 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 }
 
 section {
@@ -28,9 +30,7 @@ section {
   text-align: center;
   width: 100%;
 }
-.last-section {
-  height: auto;
-}
+
 h1 {
   font-family: 'East Sea Dokdo', cursive;
   margin: 0;
