@@ -44,7 +44,7 @@ h2 {
   font-size: 3.6rem;
 }
 button {
-  background-image: url('../assets/btn.png');
+  background-image: url('./assets/btn.png');
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Zen Maru Gothic', sans-serif;
@@ -77,16 +77,16 @@ button {
   background-color: transparent;
 }
 .kakao {
-  background-image: url('../assets/kakaotalk-icon.png');
+  background-image: url('./assets/kakaotalk-icon.png');
 }
 .facebook {
-  background-image: url('../assets/facebook-icon.png');
+  background-image: url('./assets/facebook-icon.png');
 }
 .line {
-  background-image: url('../assets/line-icon.png');
+  background-image: url('./assets/line-icon.png');
 }
 .link {
-  background-image: url('../assets/link.png');
+  background-image: url('./assets/link.png');
 }
 
 .top {
