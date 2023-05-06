@@ -95,6 +95,10 @@ button {
 .top {
   gap: 6%;
 }
+.top-title {
+  margin: 0;
+  font-size: 2rem;
+}
 .information {
   display: flex;
   flex-direction: column;
@@ -104,7 +108,7 @@ button {
 .top-img {
   object-fit: cover;
   width: 20%;
-  min-width: 200px;
+  min-width: 240px;
 }
 .top-msg {
   font-size: 2rem;
@@ -122,10 +126,13 @@ button {
 .event-text {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
+  margin: 0 0 0.8rem;
 }
 .event-sub {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   margin: 0 0 2rem;
+  line-height: 2rem;
 }
 .event-img {
   margin: 0 0 2rem;
@@ -159,14 +166,12 @@ button {
   height: 40px;
 }
 .footer {
-  gap: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   width: 100%;
-  margin-top: 4rem;
+  position: relative;
 }
 .footer-text {
   font-size: 1.2rem;
@@ -175,10 +180,17 @@ button {
 .action-buttons {
   display: flex;
   gap: 1rem;
-  margin: 2rem 0 1rem;
 }
-
+.footer-share {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.4rem;
+}
 .credit {
   font-size: 1rem;
-  margin: 2rem 0;
+  position: absolute;
+  bottom: 1rem;
 }
