@@ -63,7 +63,11 @@ button {
   align-items: center;
   height: 72px;
 }
-
+@media screen and (min-width: 768px) {
+  button {
+    height: 108px;
+  }
+}
 .button-transparent {
   height: auto;
   background-image: none;
