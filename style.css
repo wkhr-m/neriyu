@@ -6,6 +6,7 @@
 html {
   scroll-snap-type: block mandatory;
   scroll-snap-stop: always;
+  -webkit-overflow-scrolling: touch;
 }
 body {
   color: var(--main-color);
@@ -45,10 +46,11 @@ h2 {
 }
 button {
   background-image: url('./assets/btn.png');
-  background-size: cover;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: 'Zen Maru Gothic', sans-serif;
   color: #fff;
+  background-color: inherit;
   border: none;
   font-size: 1.4rem;
   padding: 1rem 2rem;
