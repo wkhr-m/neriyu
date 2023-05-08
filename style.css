@@ -68,6 +68,13 @@ button {
     height: 108px;
   }
 }
+.button-s {
+  background-image: url('./assets/btn-s.png');
+  height: 20px;
+  width: 72px;
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 1.6rem;
+}
 .button-transparent {
   height: auto;
   background-image: none;
@@ -159,6 +166,11 @@ button {
   font-size: 1rem;
   padding-bottom: 2rem;
 }
+.location-link {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 24px;
+}
 .location-subtitle {
   width: 100%;
   padding: 0 40px;
@@ -170,6 +182,36 @@ button {
 }
 .location-aaa {
   height: 40px;
+}
+.contact-header {
+  text-align: left;
+  width: 100%;
+  margin-inline-start: 2rem;
+  font-weight: 400;
+  position: relative;
+}
+.contact-header::after {
+  content: '';
+  position: absolute;
+  border-top: 1.6px solid var(--main-color);
+  width: 160px;
+  bottom: -4px;
+  left: 0;
+}
+.contact-name {
+  width: 200px;
+  text-align: left;
+  &.s {
+    font-size: 1.2rem;
+  }
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+.contact-actions {
+  display: flex;
+  gap: 4px;
 }
 .footer {
   display: flex;
