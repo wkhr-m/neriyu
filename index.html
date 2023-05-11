@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
     <title>孫家 若原家 結婚式招待状</title>
   </head>
   <body>
@@ -117,16 +118,23 @@
         </div>
         <button>LINEで出席連絡をする</button>
         <div class="footer-share">
-          <button class="button-transparent">このリンクをシェアする</button>
+          <button class="button-transparent" id="share-link">
+            このリンクをシェアする
+          </button>
           <div class="action-buttons">
             <button name="to Kakao talk" class="button-icon kakao"></button>
             <button name="to facebook" class="button-icon facebook"></button>
             <button name="to LINE" class="button-icon line"></button>
-            <button name="Link" class="button-icon link"></button>
+            <button
+              name="Link"
+              class="button-icon link"
+              id="share-button"
+            ></button>
           </div>
         </div>
         <div class="credit">© 2023 yuma &amp; hyerim wedding</div>
       </section>
+      <!-- <div id="copy">copied!</div> -->
     </main>
   </body>
 </html>
