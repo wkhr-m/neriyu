@@ -69,11 +69,11 @@ button {
   }
 }
 .button-s {
-  background-image: url('./assets/btn-s.png');
+  background-image: url(./assets/btn-s.png);
   height: 20px;
-  width: 72px;
+  width: 60px;
   font-family: 'East Sea Dokdo', cursive;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .button-transparent {
   height: auto;
@@ -218,9 +218,9 @@ button {
 .contact-header {
   text-align: left;
   width: 100%;
-  margin-inline-start: 2rem;
   font-weight: 400;
   position: relative;
+  font-size: 1.4rem;
 }
 .contact-header::after {
   content: '';
@@ -231,11 +231,9 @@ button {
   left: 0;
 }
 .contact-name {
-  width: 200px;
+  width: 180px;
+  font-size: 1rem;
   text-align: left;
-}
-.contact-name-s {
-  font-size: 1.2rem;
 }
 .contact-item {
   display: flex;
