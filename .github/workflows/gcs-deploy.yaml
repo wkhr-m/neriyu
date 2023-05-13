@@ -34,3 +34,4 @@ jobs:
         with:
           path: ./build
           destination: neriyu-content
+          parent: false
