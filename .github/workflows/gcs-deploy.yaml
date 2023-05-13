@@ -8,6 +8,9 @@ on:
 jobs:
   upload_file_gcs:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - uses: actions/checkout@v2
       - uses: google-github-actions/setup-gcloud@main

@@ -117,6 +117,7 @@ button {
   gap: 8%;
 }
 .lang-button {
+  user-select: none;
   font-family: 'East Sea Dokdo', cursive;
   color: var(--main-color);
   background-image: url('./assets/btn-lang.png');
@@ -225,9 +226,9 @@ button {
 .contact-name {
   width: 200px;
   text-align: left;
-  &.s {
-    font-size: 1.2rem;
-  }
+}
+.contact-name-s {
+  font-size: 1.2rem;
 }
 .contact-item {
   display: flex;
