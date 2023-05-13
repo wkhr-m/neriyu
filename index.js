@@ -1,18 +1,30 @@
 (function () {
-  const shareButtonEl = document.querySelector('#share-button');
-  const shareLinkEl = document.querySelector('#share-link');
-  const copyEl = document.querySelector('#copy');
+  const shareButtonEl = document.querySelector('.share-button');
+  const shareIconButtonEl = document.querySelector('.share-icon-button');
+  const tooltipEl = document.querySelector('.tooltip_1');
+  const tooltipEl2 = document.querySelector('.tooltip_2');
+  const popperInstance = Popper.createPopper(shareButtonEl, tooltipEl, {
+    placement: 'top',
+  });
+  const popperInstance2 = Popper.createPopper(shareIconButtonEl, tooltipEl2, {
+    placement: 'top',
+  });
 
-  const messageActive = () => {};
+  const showTooltip = (isIconButton) => {
+    (isIconButton ? tooltipEl2 : tooltipEl).setAttribute('data-show', '');
+    (isIconButton ? popperInstance2 : popperInstance).update();
+    setTimeout(() => {
+      (isIconButton ? tooltipEl2 : tooltipEl).removeAttribute('data-show');
+      (isIconButton ? popperInstance2 : popperInstance).update();
+    }, 2000);
+  };
 
-  const sharelink = async (event) => {
-    console.log(event.currentTarget);
+  const sharelink = async (event, isIconButton) => {
+    showTooltip(isIconButton);
     if (navigator.clipboard) {
       return navigator.clipboard
         .writeText(window.location.href)
-        .then(function () {
-          messageActive();
-        });
+        .then(function () {});
     } else {
       const input = document.createElement('input');
       input.type = 'hidden';
@@ -24,5 +36,7 @@
     }
   };
   shareButtonEl.addEventListener('click', (event) => sharelink(event));
-  shareLinkEl.addEventListener('click', (event) => sharelink(event));
+  shareIconButtonEl.addEventListener('click', (event) =>
+    sharelink(event, true)
+  );
 })();
