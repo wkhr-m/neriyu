@@ -206,6 +206,12 @@ button {
   text-decoration: underline;
   text-underline-offset: 6px;
 }
+.map {
+  display: flex;
+  justify-content: ceneter;
+  align-items: center;
+  flex-direction: column;
+}
 .location-aaa {
   height: 40px;
 }

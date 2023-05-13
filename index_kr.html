@@ -72,43 +72,47 @@
           청주시 흥덕구 강내면 학천길 5<br />
           구) 청원군 강내면 학천리 299-4<br />
         </div>
-        <!-- * 카카오맵 - 지도퍼가기 -->
-        <!-- 1. 지도 노드 -->
+        <div class="map">
+          <!-- * 카카오맵 - 지도퍼가기 -->
+          <!-- 1. 지도 노드 -->
 
-        <div
-          id="daumRoughmapContainer1683993761440"
-          class="root_daum_roughmap root_daum_roughmap_landing"
-        ></div>
+          <div
+            id="daumRoughmapContainer1683993761440"
+            class="root_daum_roughmap root_daum_roughmap_landing"
+          ></div>
 
-        <!--
+          <!--
 	2. 설치 스크립트
 	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
 -->
-        <script
-          charset="UTF-8"
-          class="daum_roughmap_loader_script"
-          src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
-        ></script>
+          <script
+            charset="UTF-8"
+            class="daum_roughmap_loader_script"
+            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+          ></script>
 
-        <!-- 3. 실행 스크립트 -->
-        <script charset="UTF-8">
-          new daum.roughmap.Lander({
-            timestamp: '1683993761440',
-            key: '2eryj',
-            mapWidth: '300',
-            mapHeight: '200',
-          }).render();
-        </script>
-        <div class="location-links">
-          <a class="location-link" href="https://goo.gl/maps/P2V3SEQvBLFn97TQ8"
-            >Google Map</a
-          >
-          <a class="location-link" href="https://naver.me/5uc1539q"
-            >Naver map</a
-          >
-          <a class="location-link" href="http://kko.to/P7o1HCdqFq"
-            >Kakao navi</a
-          >
+          <!-- 3. 실행 스크립트 -->
+          <script charset="UTF-8">
+            new daum.roughmap.Lander({
+              timestamp: '1683993761440',
+              key: '2eryj',
+              mapWidth: '300',
+              mapHeight: '200',
+            }).render();
+          </script>
+          <div class="location-links">
+            <a
+              class="location-link"
+              href="https://goo.gl/maps/P2V3SEQvBLFn97TQ8"
+              >Google Map</a
+            >
+            <a class="location-link" href="https://naver.me/5uc1539q"
+              >Naver map</a
+            >
+            <a class="location-link" href="http://kko.to/P7o1HCdqFq"
+              >Kakao navi</a
+            >
+          </div>
         </div>
         <div class="location-subtitle">오시는길</div>
         <div class="location-aaa"></div>
