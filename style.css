@@ -19,7 +19,12 @@ body {
   width: 100vw;
   position: relative;
 }
-
+.kr {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.kr button {
+  font-family: 'Nanum Gothic', sans-serif;
+}
 section {
   contain: content;
   scroll-snap-align: start;
@@ -63,6 +68,10 @@ button {
   align-items: center;
   height: 72px;
 }
+.btn-border {
+  background-image: url('./assets/btn-border.png');
+  color: var(--main-color);
+}
 @media screen and (min-width: 768px) {
   button {
     height: 108px;
@@ -72,7 +81,7 @@ button {
   background-image: url(./assets/btn-s.png);
   height: 20px;
   width: 60px;
-  font-family: 'East Sea Dokdo', cursive;
+  font-family: 'East Sea Dokdo', cursive !important;
   font-size: 1.2rem;
 }
 .button-transparent {
@@ -166,11 +175,17 @@ button {
   font-size: 1.6rem;
   margin: 0 0 0.8rem;
 }
+.event-text-kr {
+  font-family: 'Nanum Gothic', sans-serif;
+}
 .event-sub {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   margin: 0 0 2rem;
   line-height: 2rem;
+}
+.event-sub-kr {
+  font-family: 'Nanum Gothic', sans-serif;
 }
 .event-img {
   margin: 0 0 2rem;
@@ -254,6 +269,10 @@ button {
 .footer-text {
   font-size: 1.2rem;
   margin-bottom: 1.4rem;
+}
+.footer-text-kr {
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 3rem;
 }
 .action-buttons {
   display: flex;
