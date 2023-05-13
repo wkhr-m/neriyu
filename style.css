@@ -107,7 +107,31 @@ button {
 
 .top {
   gap: 6%;
+  position: relative;
 }
+.i18n {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  display: flex;
+  gap: 8%;
+}
+.lang-button {
+  font-family: 'East Sea Dokdo', cursive;
+  color: var(--main-color);
+  background-image: url('./assets/btn-lang.png');
+  height: 36px;
+  text-decoration: none;
+  width: 36px;
+  line-height: 30px;
+  margin: 2px;
+  background-repeat: no-repeat;
+  &.active {
+    color: #fff;
+    background-image: url('./assets/btn-lang-selected.png');
+  }
+}
+
 .top-title {
   margin: 0;
   font-size: 2rem;
