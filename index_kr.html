@@ -1,182 +1,165 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Nanum+Gothic&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <script defer src="https://unpkg.com/@popperjs/core@2"></script>
-    <script defer src="./index.js"></script>
-    <title>결혼합니다</title>
-  </head>
-  <body class="kr">
-    <main>
-      <section class="top">
-        <div class="i18n">
-          <a class="lang-button" href="/index.html">JP</a>
-          <a class="lang-button lang-button-active">KR</a>
-        </div>
-        <div>
-          <h2 class="top-title">
-            Welcome to<br />
-            Yuma &amp; Hyerim's<br />
-          </h2>
-          <h1>Wedding</h1>
-        </div>
-        <img
-          class="top-img"
-          src="./assets/img_fv 2.png"
-          alt="ねりとゆうま"
-          decoding="async"
-        />
-        <p class="top-msg">
-          Octorber 7, 2023<br />
-          17:00-<br />
-          at THE BIIN CONVENTION
-        </p>
-      </section>
-      <section>
-        <h2>Message</h2>
-        <p class="msg-text">
-          결혼식에 초대<br />
-          소중한 사람을 소중한 사람에게 소개<br />
-          뜻깊은 날에 와주길 바래<br />
-        </p>
-      </section>
-      <section>
-        <h2>Event</h2>
-        <p class="event-text event-text-kr">2023.10.7토요일 오후5:00</p>
-        <p class="event-sub event-sub-kr">접수시작시간 4:30</p>
-        <img src="./assets/calendar.png" alt="달력" class="calendar-img" />
-      </section>
-      <section>
-        <h2>Location</h2>
-        <div class="location-name">The BIIN Convention</div>
-        <div class="location-text">
-          <a href="http://www.biin.co.kr">http://www.biin.co.kr</a><br />
-          043-238-2222<br />
-          청주시 흥덕구 강내면 학천길 5<br />
-          구) 청원군 강내면 학천리 299-4<br />
-        </div>
-        <div class="map">
-          <!-- * 카카오맵 - 지도퍼가기 -->
-          <!-- 1. 지도 노드 -->
 
-          <div
-            id="daumRoughmapContainer1683993761440"
-            class="root_daum_roughmap root_daum_roughmap_landing"
-          ></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Nanum+Gothic&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="https://unpkg.com/@popperjs/core@2"></script>
+  <script defer src="./index.js"></script>
+  <title>결혼합니다</title>
+</head>
 
-          <!--
+<body class="kr">
+  <main>
+    <section class="top">
+      <div class="i18n">
+        <a class="lang-button" href="/index.html">JP</a>
+        <a class="lang-button lang-button-active">KR</a>
+      </div>
+      <div>
+        <h2 class="top-title">
+          Welcome to<br />
+          Yuma &amp; Hyerim's<br />
+        </h2>
+        <h1>Wedding</h1>
+      </div>
+      <img class="top-img" src="./assets/img_fv 2.png" alt="ねりとゆうま" decoding="async" />
+      <p class="top-msg">
+        Octorber 7, 2023<br />
+        17:00-<br />
+        at THE BIIN CONVENTION
+      </p>
+    </section>
+    <section>
+      <h2>Message</h2>
+      <p class="msg-text">
+        결혼식에 초대<br />
+        소중한 사람을 소중한 사람에게 소개<br />
+        뜻깊은 날에 와주길 바래<br />
+      </p>
+    </section>
+    <section>
+      <h2>Event</h2>
+      <p class="event-text event-text-kr">2023.10.7토요일 오후5:00</p>
+      <p class="event-sub event-sub-kr">접수시작시간 4:30</p>
+      <img src="./assets/calendar.png" alt="달력" class="calendar-img" />
+    </section>
+    <section>
+      <h2>Location</h2>
+      <div class="location-name">The BIIN Convention</div>
+      <div class="location-text">
+        <a href="http://www.biin.co.kr">http://www.biin.co.kr</a><br />
+        043-238-2222<br />
+        청주시 흥덕구 강내면 학천길 5<br />
+        <span class="location-old">구) 청원군 강내면 학천리 299-4<br /></span>
+      </div>
+      <div class="map">
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+
+        <div id="daumRoughmapContainer1683993761440" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
 	2. 설치 스크립트
 	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
 -->
-          <script
-            charset="UTF-8"
-            class="daum_roughmap_loader_script"
-            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
-          ></script>
+        <script charset="UTF-8" class="daum_roughmap_loader_script"
+          src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-          <!-- 3. 실행 스크립트 -->
-          <script charset="UTF-8">
-            new daum.roughmap.Lander({
-              timestamp: '1683993761440',
-              key: '2eryj',
-              mapWidth: '300',
-              mapHeight: '200',
-            }).render();
-          </script>
-          <div class="location-links">
-            <a
-              class="location-link"
-              href="https://goo.gl/maps/P2V3SEQvBLFn97TQ8"
-              >Google Map</a
-            >
-            <a class="location-link" href="https://naver.me/5uc1539q"
-              >Naver map</a
-            >
-            <a class="location-link" href="http://kko.to/P7o1HCdqFq"
-              >Kakao navi</a
-            >
-          </div>
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+          new daum.roughmap.Lander({
+            timestamp: '1683993761440',
+            key: '2eryj',
+            mapWidth: '300',
+            mapHeight: '200',
+          }).render();
+        </script>
+        <div class="location-links">
+          <a class="location-link" href="https://goo.gl/maps/P2V3SEQvBLFn97TQ8">Google Map</a>
+          <a class="location-link" href="https://naver.me/F3oQevCX">Naver map</a>
+          <a class="location-link" href="http://kko.to/P7o1HCdqFq">Kakao navi</a>
         </div>
-        <div class="location-subtitle">오시는길</div>
-        <div class="location-aaa"></div>
-        <div class="location-subtitle">주차안내</div>
-        <div class="location-aaa"></div>
-      </section>
-      <section>
-        <h2>Contact</h2>
-        <div>
-          <div class="contact-item">
-            <div class="contact-name">신랑　와카하라유마</div>
-            <div class="contact-actions">
-              <button class="button-s">LINE</button>
-              <button class="button-s">Kakao</button>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-name">신부　손혜림</div>
-            <div class="contact-actions">
-              <button class="button-s">LINE</button>
-              <button class="button-s">Kakao</button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3 class="contact-header">친족 연락처</h3>
-          <div class="contact-item">
-            <div class="contact-name">신부의 아버지　손희원</div>
-            <div class="contact-actions">
-              <button class="button-s">Tel</button>
-              <button class="button-s">Kakao</button>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-name">신부의 어머니　이은주</div>
-            <div class="contact-actions">
-              <button class="button-s">Tel</button>
-              <button class="button-s">Kakao</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="footer">
-        <div class="footer-text">
-          <div class="footer-text-kr">신랑 &amp; 신부에게 마음 전하기</div>
-          축복의 의미로 축의금을 전달해보세요.
-        </div>
-        <button class="btn-border">계좌번호</button>
-        <div class="footer-share">
-          <button class="button-transparent share-button">
-            이 링크를 쉐어
-          </button>
-          <div class="action-buttons">
-            <button name="to Kakao talk" class="button-icon kakao"></button>
-            <button name="to facebook" class="button-icon facebook"></button>
-            <button name="to LINE" class="button-icon line"></button>
-            <button
-              name="Link"
-              class="button-icon link share-icon-button"
-            ></button>
-          </div>
-        </div>
-        <div class="credit">© 2023 yuma &amp; hyerim wedding</div>
-      </section>
-      <div class="tooltip tooltip_1" role="tooltip">
-        copied!
-        <div class="arrow" data-popper-arrow></div>
       </div>
-      <div class="tooltip tooltip_2" role="tooltip">
-        copied!
-        <div class="arrow" data-popper-arrow></div>
+    </section>
+    <section>
+      <div class="location-subtitle">오시는길</div>
+      <div class="location-aaa"></div>
+      <div class="location-subtitle">주차안내</div>
+      <div class="location-aaa"></div>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <div>
+        <div class="contact-item">
+          <div class="contact-name">신랑　와카하라유마</div>
+          <div class="contact-actions">
+            <button class="button-s">LINE</button>
+            <button class="button-s">Kakao</button>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-name">신부　손혜림</div>
+          <div class="contact-actions">
+            <button class="button-s">LINE</button>
+            <button class="button-s">Kakao</button>
+          </div>
+        </div>
       </div>
-    </main>
-  </body>
+      <div>
+        <h3 class="contact-header">신부 측 혼주</h3>
+        <div class="contact-item">
+          <div class="contact-name">아버지　손희원</div>
+          <div class="contact-actions">
+            <button class="button-s">Tel</button>
+            <button class="button-s">Kakao</button>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-name">어머니　이은주</div>
+          <div class="contact-actions">
+            <button class="button-s">Tel</button>
+            <button class="button-s">Kakao</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer-text">
+        <div class="footer-text-kr">신랑 &amp; 신부에게
+          <br />마음 전하기
+        </div>
+        축복의 의미로 축의금을 전달해보세요.
+      </div>
+      <button class="btn-border">계좌번호</button>
+      <div class="footer-share">
+        <button class="button-transparent share-button">
+          이 링크를 쉐어
+        </button>
+        <div class="action-buttons">
+          <button name="to Kakao talk" class="button-icon kakao"></button>
+          <button name="to facebook" class="button-icon facebook"></button>
+          <button name="to LINE" class="button-icon line"></button>
+          <button name="Link" class="button-icon link share-icon-button"></button>
+        </div>
+      </div>
+      <div class="credit">© 2023 yuma &amp; hyerim wedding</div>
+    </section>
+    <div class="tooltip tooltip_1" role="tooltip">
+      copied!
+      <div class="arrow" data-popper-arrow></div>
+    </div>
+    <div class="tooltip tooltip_2" role="tooltip">
+      copied!
+      <div class="arrow" data-popper-arrow></div>
+    </div>
+  </main>
+</body>
+
 </html>

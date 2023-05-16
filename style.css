@@ -23,7 +23,8 @@ body {
 }
 
 main {
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
   height: 100vh;
 }
@@ -46,6 +47,9 @@ section {
   flex-direction: column;
   text-align: center;
   width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 h1 {
@@ -57,7 +61,7 @@ h1 {
 
 h2 {
   font-family: 'East Sea Dokdo', cursive;
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
   font-weight: 400;
   font-size: 3.6rem;
 }
@@ -72,7 +76,7 @@ button {
   border: none;
   font-size: 1.2rem;
   padding: 0.8rem 2rem 1.2rem;
-  width: 80%;
+  width: 100%;
   max-width: 200px;
   max-width: 500px;
   cursor: pointer;
@@ -209,11 +213,15 @@ button {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+
 .event-sub {
+  display: flex;
+  gap: 1rem;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.4rem;
-  margin: 0 0 2rem;
-  line-height: 2rem;
+}
+
+.event-sub-title {
+  width: 64px;
 }
 
 .event-sub-kr {
@@ -221,7 +229,7 @@ button {
 }
 
 .event-img {
-  margin: 0 0 2rem;
+  margin: 1rem 0 2rem;
 }
 
 .event-explain {
@@ -244,21 +252,24 @@ button {
   padding-bottom: 2rem;
 }
 
+.location-old {
+  font-size: 0.8rem;
+}
+
 .location-link {
   color: inherit;
   text-decoration: none;
-  margin: 0 1rem;
+  margin: 0 0.4rem;
   font-size: 1rem;
 }
 
 .location-subtitle {
-  width: 100%;
-  padding: 0 40px;
   box-sizing: border-box;
   display: flex;
   font-size: 1.2rem;
   text-decoration: underline;
   text-underline-offset: 6px;
+  width: 100%;
 }
 
 .map {
@@ -310,8 +321,9 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
   position: relative;
+  padding-bottom: 48px;
+  height: calc(100vh - 48px);
 }
 
 .footer-text {
@@ -322,6 +334,8 @@ button {
 .footer-text-kr {
   font-family: 'East Sea Dokdo', cursive;
   font-size: 3rem;
+  margin-top: 1.8rem;
+  line-height: 2.4rem;
 }
 
 .action-buttons {
