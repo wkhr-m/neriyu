@@ -5,17 +5,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com" />
+  <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Nanum+Gothic&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./style_kr.css" />
   <script defer src="https://unpkg.com/@popperjs/core@2"></script>
   <script defer src="./index.js"></script>
   <title>결혼합니다</title>
 </head>
 
-<body class="kr">
+<body>
   <main>
     <section class="top">
       <div class="i18n">
@@ -23,11 +23,11 @@
         <a class="lang-button lang-button-active">KR</a>
       </div>
       <div>
-        <h2 class="top-title">
+        <h1 class="top-title">
           Welcome to<br />
           Yuma &amp; Hyerim's<br />
-        </h2>
-        <h1>Wedding</h1>
+          <strong class="top-title-strong">Wedding</strong>
+        </h1>
       </div>
       <img class="top-img" src="./assets/img_fv.png" alt="ねりとゆうま" decoding="async" />
       <p class="top-msg">
@@ -39,22 +39,25 @@
     <section>
       <h2>Message</h2>
       <p class="msg-text">
-        결혼식에 초대<br />
-        소중한 사람을 소중한 사람에게 소개<br />
-        뜻깊은 날에 와주길 바래<br />
+        다른 국적 다른 인생을 살아 온 저희가 이렇게 만나
+        새로운 인생을 만들어가려고 합니다.<br />
+
+        평생 좋은 가족으로 살아가겠습니다.<br />
+
+        한 곳을 바라보며 첫 발을 떼는 자리입니다. 그 시작의 자리에 함께해 주시기를 바랍니다.
       </p>
     </section>
     <section>
       <h2>Event</h2>
-      <p class="event-text event-text-kr">2023.10.7토요일 오후5:00</p>
-      <p class="event-sub event-sub-kr">접수시작시간 4:30</p>
+      <p class="event-text">2023.10.7 토요일 오후 5:00</p>
+      <p class="event-sub">접수 시작 오후 4:30</p>
       <img src="./assets/calender.svg" alt="달력" class="event-img" />
     </section>
     <section>
       <h2>Location</h2>
       <div class="location-name">The BIIN Convention</div>
       <div class="location-text">
-        <a href="http://www.biin.co.kr">http://www.biin.co.kr</a><br />
+        <a href="http://www.biin.co.kr" class="location-link">http://www.biin.co.kr</a><br />
         043-238-2222<br />
         청주시 흥덕구 강내면 학천길 5<br />
         <span class="location-old">구) 청원군 강내면 학천리 299-4<br /></span>
@@ -90,9 +93,15 @@
     </section>
     <section>
       <div class="location-subtitle">오시는길</div>
-      <div class="location-aaa"></div>
+      <div class="location-explain">
+        <ul>
+          <li>경부 고속도로</li>
+          <li>중부 고속도로</li>
+        </ul>
+        <div>그 외의 안내에 관해서는 <em>더 빈 컨벤션 홈페이지 안내</em> 를 확인 해 주세요</div>
+      </div>
       <div class="location-subtitle">주차안내</div>
-      <div class="location-aaa"></div>
+      <div class="location-explain">주차 수용 대수 : 1100대 / 무료</div>
     </section>
     <section>
       <h2>Contact</h2>
@@ -153,7 +162,7 @@
             <img class="button-icon-img" src="./assets/line.svg" alt="LINE">
           </a>
           <a name="Link" class="button-icon share-icon-button">
-            <img class="button-icon-img" src="./assets/link.svg" alt="このリンクをコピーする">
+            <img class="button-icon-img copy-icon" src="./assets/link.svg" alt="このリンクをコピーする">
           </a>
         </div>
       </div>

@@ -5,12 +5,6 @@
   --third-color: #e56d2c;
 }
 
-@font-face {
-  font-family: "Montserrat-Numbers";
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat") format("woff");
-  unicode-range: U+0030-0039;
-}
-
 html {
   scroll-snap-type: block mandatory;
   scroll-snap-stop: always;
@@ -19,7 +13,7 @@ html {
 
 body {
   color: var(--main-color);
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'East Sea Dokdo', sans-serif;
   font-size: 1.4rem;
   padding: 0;
   margin: 0;
@@ -34,14 +28,6 @@ main {
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   height: 100vh;
-}
-
-.kr {
-  font-family: 'Nanum Gothic', sans-serif;
-}
-
-.kr button {
-  font-family: 'Nanum Gothic', sans-serif;
 }
 
 section {
@@ -78,7 +64,7 @@ h2 {
   background-image: url("./assets/btn-big-blue.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   color: #fff;
   background-color: inherit;
   border: none;
@@ -92,6 +78,22 @@ h2 {
   align-items: center;
   height: 60px;
   text-decoration: none;
+}
+
+.btn-border {
+  background-image: url('./assets/btn-outline.png');
+  color: var(--main-color);
+}
+
+.button-s {
+  background-image: url("./assets/btn-small.png");
+  background-size: 100% 100%;
+  color: #fff;
+  background-color: inherit;
+  border: none;
+  width: 60px;
+  font-family: 'East Sea Dokdo', cursive !important;
+  font-size: 1.2rem;
 }
 
 .share-button {
@@ -178,7 +180,6 @@ h2 {
 }
 
 .msg-text {
-  font-size: 1rem;
   line-height: 2rem;
   letter-spacing: 0.1rem;
 }
@@ -194,7 +195,7 @@ h2 {
 }
 
 .event-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 1.6rem;
   margin: 0 0 0.8rem;
 }
@@ -202,11 +203,7 @@ h2 {
 .event-sub {
   display: flex;
   gap: 1rem;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.event-sub-title {
-  width: 64px;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .event-img {
@@ -215,30 +212,22 @@ h2 {
   max-width: 400px;
 }
 
-.event-explain {
-  font-size: 1rem;
-  line-height: 2rem;
-  margin: 1.2rem 0;
-}
-
-.event-finish {
-  font-size: 0.9rem;
-}
-
 .location-name {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
 .location-text {
-  font-size: 1rem;
   padding-bottom: 2rem;
+}
+
+.location-old {
+  font-size: 1rem;
 }
 
 .location-link {
   color: var(--third-color);
   margin: 0 0.4rem;
-  font-size: 1rem;
 }
 
 .location-subtitle {
@@ -262,6 +251,38 @@ h2 {
   text-align: start;
 }
 
+.contact-header {
+  text-align: left;
+  width: 100%;
+  font-weight: 400;
+  position: relative;
+  font-size: 1.4rem;
+}
+
+.contact-header::after {
+  content: '';
+  position: absolute;
+  border-top: 1.6px solid var(--main-color);
+  width: 160px;
+  bottom: -4px;
+  left: 0;
+}
+
+.contact-name {
+  width: 180px;
+  text-align: left;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 4px;
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -275,6 +296,13 @@ h2 {
 .footer-text {
   font-size: 1.2rem;
   margin-bottom: 1.4rem;
+}
+
+.footer-text-kr {
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 3rem;
+  margin-top: 1.8rem;
+  line-height: 2.4rem;
 }
 
 .action-buttons {
@@ -306,7 +334,6 @@ h2 {
   color: white;
   font-weight: bold;
   padding: 4px 8px;
-  font-size: 13px;
   border-radius: 4px;
   transition: opacity 0.3s ease-in-out;
 }
