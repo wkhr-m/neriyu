@@ -24,7 +24,7 @@
     if (navigator.clipboard) {
       return navigator.clipboard
         .writeText(window.location.href)
-        .then(function () {});
+        .then(function () { });
     } else {
       const input = document.createElement('input');
       input.type = 'hidden';

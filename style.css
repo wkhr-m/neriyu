@@ -2,6 +2,13 @@
   --bg-color: #f8f6e9;
   --main-color: #2863a5;
   --second-color: #656565;
+  --third-color: #e56d2c;
+}
+
+@font-face {
+  font-family: "Montserrat-Numbers";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat") format("woff");
+  unicode-range: U+0030-0039;
 }
 
 html {
@@ -52,13 +59,14 @@ section {
   margin: 0;
 }
 
-h1 {
+.top-title-strong {
   font-family: 'East Sea Dokdo', cursive;
   margin: 0;
   font-size: 4rem;
   font-weight: 400;
 }
 
+h1,
 h2 {
   font-family: 'East Sea Dokdo', cursive;
   margin: 0 0 1rem;
@@ -66,78 +74,67 @@ h2 {
   font-size: 3.6rem;
 }
 
-button {
-  background-image: url('./assets/btn.png');
-  background-size: 100% auto;
+.button {
+  background-image: url("./assets/btn-big-blue.png");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   font-family: 'Zen Maru Gothic', sans-serif;
   color: #fff;
   background-color: inherit;
   border: none;
   font-size: 1.2rem;
-  padding: 0.8rem 2rem 1.2rem;
-  width: 100%;
   max-width: 200px;
+  width: 100%;
   max-width: 500px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 72px;
+  height: 60px;
+  text-decoration: none;
 }
 
 .btn-border {
-  background-image: url('./assets/btn-border.png');
+  background-image: url('./assets/btn-outline.png');
   color: var(--main-color);
 }
 
-@media screen and (min-width: 768px) {
-  button {
-    height: 108px;
-  }
-}
-
 .button-s {
-  background-image: url(./assets/btn-s.png);
-  height: 20px;
+  background-image: url("./assets/btn-small.png");
+  background-size: 100% 100%;
+  color: #fff;
+  background-color: inherit;
+  border: none;
   width: 60px;
   font-family: 'East Sea Dokdo', cursive !important;
   font-size: 1.2rem;
 }
 
-.button-transparent {
-  height: auto;
-  background-image: none;
-  background-color: transparent;
+.share-button {
+  font-family: 'Zen Maru Gothic', sans-serif;
   color: var(--main-color);
   font-size: 1.2rem;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 .button-icon {
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   padding: 0;
   background-color: transparent;
 }
 
-.kakao {
-  background-image: url('./assets/kakaotalk-icon.png');
+.share-icon-button {
+  border-radius: 100%;
 }
 
-.facebook {
-  background-image: url('./assets/facebook-icon.png');
-}
-
-.line {
-  background-image: url('./assets/line-icon.png');
-}
-
-.link {
-  background-image: url('./assets/link.png');
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
+.button-icon-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .top {
@@ -158,12 +155,15 @@ button {
   font-family: 'East Sea Dokdo', cursive;
   color: var(--main-color);
   background-image: url('./assets/btn-lang.png');
-  height: 36px;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
   text-decoration: none;
-  width: 36px;
-  line-height: 30px;
-  margin: 2px;
+  background-size: 100% auto;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lang-button-active {
@@ -196,11 +196,17 @@ button {
 .msg-text {
   font-size: 1rem;
   line-height: 2rem;
+  letter-spacing: 0.1rem;
 }
 
-.msg-dogeza-img {
-  width: 80%;
-  max-width: 300px;
+.msg-img {
+  width: 20vw;
+  max-width: 100px;
+}
+
+.msg-expired {
+  color: var(--third-color);
+  font-weight: normal;
 }
 
 .event-text {
@@ -229,13 +235,15 @@ button {
 }
 
 .event-img {
-  margin: 1rem 0 2rem;
+  margin: 2rem 0;
+  width: 80vw;
+  max-width: 400px;
 }
 
 .event-explain {
   font-size: 1rem;
   line-height: 2rem;
-  margin-bottom: 1.6rem;
+  margin: 1.2rem 0;
 }
 
 .event-finish {
@@ -257,8 +265,7 @@ button {
 }
 
 .location-link {
-  color: inherit;
-  text-decoration: none;
+  color: var(--third-color);
   margin: 0 0.4rem;
   font-size: 1rem;
 }
@@ -279,8 +286,9 @@ button {
   flex-direction: column;
 }
 
-.location-aaa {
-  height: 40px;
+.location-explain {
+  font-size: 0.8rem;
+  text-align: start;
 }
 
 .contact-header {
@@ -341,6 +349,7 @@ button {
 .action-buttons {
   display: flex;
   gap: 1rem;
+  justify-content: space-between;
 }
 
 .footer-share {
@@ -350,10 +359,12 @@ button {
   align-items: center;
   justify-content: center;
   margin-top: 2.4rem;
+  gap: 1rem;
 }
 
 .credit {
   font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
   bottom: 1rem;
 }
