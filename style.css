@@ -19,7 +19,6 @@ html {
 
 body {
   color: var(--main-color);
-  background-color: var(--bg-color);
   font-family: 'Zen Maru Gothic', sans-serif;
   font-size: 1.4rem;
   padding: 0;
@@ -27,6 +26,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative;
+  background-image: url("./assets/paper-bg.jpg");
 }
 
 main {
