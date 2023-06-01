@@ -26,7 +26,6 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative;
-  background-image: url("./assets/paper-bg.jpg");
 }
 
 main {
@@ -49,6 +48,7 @@ section {
   padding: 0 2rem;
   box-sizing: border-box;
   margin: 0;
+  background-image: url("./assets/paper-bg.jpg");
 }
 
 .top-title-strong {
