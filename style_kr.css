@@ -14,7 +14,7 @@ html {
 body {
   color: var(--main-color);
   font-family: 'East Sea Dokdo', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -92,6 +92,7 @@ h2 {
   background-color: inherit;
   border: none;
   width: 60px;
+  text-decoration: none;
   font-family: 'East Sea Dokdo', cursive !important;
   font-size: 1.2rem;
 }
@@ -162,12 +163,6 @@ h2 {
   font-size: 2rem;
 }
 
-.information {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .top-img {
   object-fit: cover;
   width: 20%;
@@ -182,6 +177,7 @@ h2 {
 .msg-text {
   line-height: 2rem;
   letter-spacing: 0.1rem;
+  font-size: 1.4rem
 }
 
 .msg-img {
@@ -196,7 +192,6 @@ h2 {
 
 .event-text {
   font-family: 'Nanum Gothic', sans-serif;
-  font-size: 1.6rem;
   margin: 0 0 0.8rem;
 }
 
@@ -213,7 +208,7 @@ h2 {
 }
 
 .location-name {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -222,7 +217,7 @@ h2 {
 }
 
 .location-old {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .location-link {
@@ -233,10 +228,10 @@ h2 {
 .location-subtitle {
   box-sizing: border-box;
   display: flex;
-  font-size: 1.2rem;
   text-decoration: underline;
   text-underline-offset: 6px;
   width: 100%;
+  margin-bottom: 0;
 }
 
 .map {
@@ -247,8 +242,17 @@ h2 {
 }
 
 .location-explain {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   text-align: start;
+  width: 100%;
+}
+
+.location-link {
+  color: var(--third-color);
+}
+
+.contact-wrapper {
+  width: 100%;
 }
 
 .contact-header {
@@ -298,8 +302,7 @@ h2 {
   margin-bottom: 1.4rem;
 }
 
-.footer-text-kr {
-  font-family: 'East Sea Dokdo', cursive;
+.footer-title {
   font-size: 3rem;
   margin-top: 1.8rem;
   line-height: 2.4rem;
