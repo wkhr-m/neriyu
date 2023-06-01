@@ -36,14 +36,6 @@ main {
   height: 100vh;
 }
 
-.kr {
-  font-family: 'Nanum Gothic', sans-serif;
-}
-
-.kr button {
-  font-family: 'Nanum Gothic', sans-serif;
-}
-
 section {
   contain: content;
   scroll-snap-align: start;
