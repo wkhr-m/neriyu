@@ -374,7 +374,7 @@ h2 {
   background-size: cover;
   position: relative;
   width: 80%;
-  border-radius: 4%;
+  border-radius: 20px;
 }
 
 .close-btn {
