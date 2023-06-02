@@ -217,6 +217,13 @@ h2 {
   font-size: 0.9rem;
 }
 
+.location-information {
+  text-align: start;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
 .location-name {
   font-size: 1.6rem;
   margin-bottom: 1rem;
@@ -236,7 +243,7 @@ h2 {
 .location-subtitle {
   box-sizing: border-box;
   display: flex;
-  font-size: 1.2rem;
+  font-size: calc(1.2rem + 1vw);
   text-decoration: underline;
   text-underline-offset: 6px;
   width: 100%;
@@ -250,7 +257,7 @@ h2 {
 }
 
 .location-explain {
-  font-size: 0.8rem;
+  font-size: calc(0.8rem + 0.4vw);
   text-align: start;
 }
 
@@ -274,6 +281,7 @@ h2 {
   gap: 1rem;
   justify-content: space-between;
   width: 100%;
+  max-width: 500px;
 }
 
 .footer-share {

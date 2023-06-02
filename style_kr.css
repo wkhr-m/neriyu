@@ -254,6 +254,7 @@ h2 {
 
 .contact-wrapper {
   width: 100%;
+  max-width: 500px;
 }
 
 .contact-header {
@@ -281,6 +282,7 @@ h2 {
 .contact-item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .contact-actions {
@@ -313,6 +315,7 @@ h2 {
   gap: 1rem;
   justify-content: space-between;
   width: 100%;
+  max-width: 500px;
 }
 
 .footer-share {
