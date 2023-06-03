@@ -61,7 +61,7 @@ h2 {
 }
 
 .button {
-  background-image: url("./assets/btn-big-blue.png");
+  background-image: url("./assets/btn-big-blue.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   font-family: 'Nanum Gothic', sans-serif;
@@ -82,12 +82,12 @@ h2 {
 }
 
 .btn-border {
-  background-image: url('./assets/btn-outline.png');
+  background-image: url('./assets/btn-outline.webp');
   color: var(--main-color);
 }
 
 .button-s {
-  background-image: url("./assets/btn-small.png");
+  background-image: url("./assets/btn-small.webp");
   background-size: 100% 100%;
   color: #fff;
   background-color: inherit;
@@ -142,7 +142,7 @@ h2 {
   user-select: none;
   font-family: 'East Sea Dokdo', cursive;
   color: var(--main-color);
-  background-image: url('./assets/btn-lang.png');
+  background-image: url('./assets/btn-lang.webp');
   height: 40px;
   width: 40px;
   min-width: 40px;
@@ -156,7 +156,7 @@ h2 {
 
 .lang-button-active {
   color: #fff;
-  background-image: url('./assets/btn-lang-selected.png');
+  background-image: url('./assets/btn-lang-selected.webp');
 }
 
 .top-title {
@@ -370,7 +370,7 @@ h2 {
 .dialog-wrapper {
   color: var(--main-color);
   border: none;
-  background-image: url("./assets/paper-bg-modal.jpg");
+  background-image: url("./assets/paper-bg-modal.webp");
   background-size: cover;
   position: relative;
   width: 80%;
