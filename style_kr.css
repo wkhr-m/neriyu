@@ -35,7 +35,7 @@ main {
   overflow-y: auto;
   overflow-x: hidden;
   /* scroll-snap-type: y mandatory; */
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 section {
@@ -201,6 +201,7 @@ h2 {
 
 .event-text {
   margin: 0 0 0.8rem;
+  font-size: 2.4rem;
 }
 
 .event-sub {
