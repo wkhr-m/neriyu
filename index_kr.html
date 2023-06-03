@@ -94,10 +94,11 @@
 
         <!-- 3. 실행 스크립트 -->
         <script charset="UTF-8">
+          const width = document.querySelector('main').getBoundingClientRect().width * 0.8;
           new daum.roughmap.Lander({
             timestamp: '1683993761440',
             key: '2eryj',
-            mapWidth: '360',
+            mapWidth: width,
             mapHeight: '200',
           }).render();
         </script>
