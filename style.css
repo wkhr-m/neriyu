@@ -5,6 +5,10 @@
   --third-color: #e56d2c;
 }
 
+a {
+  color: var(--third-color);
+}
+
 @font-face {
   font-family: 'East Sea Dokdo';
   font-style: normal;

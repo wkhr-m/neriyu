@@ -5,6 +5,10 @@
   --third-color: #e56d2c;
 }
 
+a {
+  color: var(--third-color);
+}
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -212,6 +216,7 @@ h2 {
 .event-img {
   margin: 2rem 0;
   height: 30vh;
+  max-width: 80%;
 }
 
 .location-name {
