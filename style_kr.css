@@ -27,7 +27,7 @@ html {
 body {
   color: var(--main-color);
   font-family: 'East Sea Dokdo', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 0;
   margin: 0;
   /* height: 100vh; */
@@ -57,7 +57,6 @@ section {
 }
 
 .top-title-strong {
-  font-family: 'East Sea Dokdo', cursive;
   margin: 0;
   font-size: 4rem;
   font-weight: 400;
@@ -172,13 +171,11 @@ h2 {
   background-image: url('./assets/btn-lang-selected.webp');
 }
 
-.top {
-  height: 100vh;
-}
 
 .top-title {
   margin: 0;
   font-size: 2rem;
+  line-height: 3rem;
 }
 
 .top-img {
@@ -190,6 +187,7 @@ h2 {
 .top-msg {
   font-size: 2rem;
   font-family: 'East Sea Dokdo', cursive;
+  line-height: 2.4rem;
 }
 
 .msg-text {

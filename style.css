@@ -380,7 +380,6 @@ section {
 }
 
 .top-title-strong {
-  font-family: 'East Sea Dokdo', cursive;
   margin: 0;
   font-size: 4rem;
   font-weight: 400;
@@ -480,6 +479,7 @@ h2 {
 .top-title {
   margin: 0;
   font-size: 2rem;
+  line-height: 3rem;
 }
 
 .information {
@@ -498,6 +498,7 @@ h2 {
 .top-msg {
   font-size: 2rem;
   font-family: 'East Sea Dokdo', cursive;
+  line-height: 2.4rem;
 }
 
 .msg-text {
