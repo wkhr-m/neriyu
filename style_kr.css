@@ -203,8 +203,7 @@ h2 {
 
 .event-img {
   margin: 2rem 0;
-  width: 80vw;
-  max-width: 400px;
+  height: 20vh;
 }
 
 .location-name {
