@@ -5,6 +5,15 @@
   --third-color: #e56d2c;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXp-p7K4KLg.woff2) format('woff2');
+  unicode-range: U+41-5A, U+61-7A, U+30-39, U+2E, U+20, U+2D, U+3A, U+26, U+A9;
+}
+
 html {
   scroll-snap-type: block mandatory;
   scroll-snap-stop: always;
@@ -63,12 +72,12 @@ h2 {
 .button {
   background-image: url("./assets/btn-big-blue.webp");
   background-size: 100% 100%;
+  font-family: 'East Sea Dokdo', sans-serif;
   background-repeat: no-repeat;
-  font-family: 'Nanum Gothic', sans-serif;
   color: #fff;
   background-color: inherit;
   border: none;
-  font-size: 1.2rem;
+  font-size: 2.4rem;
   max-width: 200px;
   width: 100%;
   max-width: 500px;
@@ -99,9 +108,9 @@ h2 {
 }
 
 .share-button {
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'East Sea Dokdo', sans-serif;
   color: var(--main-color);
-  font-size: 1.2rem;
+  font-size: 2.4rem;
   border: none;
   outline: none;
   background: none;
@@ -191,14 +200,12 @@ h2 {
 }
 
 .event-text {
-  font-family: 'Nanum Gothic', sans-serif;
   margin: 0 0 0.8rem;
 }
 
 .event-sub {
   display: flex;
   gap: 1rem;
-  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .event-img {
@@ -304,8 +311,7 @@ h2 {
 
 .footer-title {
   font-size: 3rem;
-  margin-top: 1.8rem;
-  line-height: 2.4rem;
+  line-height: 3rem;
 }
 
 .action-buttons {
@@ -403,6 +409,5 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'NanumGothic';
   font-size: 1.2rem;
 }
