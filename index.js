@@ -7,6 +7,7 @@
   const modalTriggerEl = document.querySelector('.modal-trigger');
   const closeButtonEl = document.querySelector('.close-btn');
   const copyButtonEls = document.querySelectorAll('.button-copy-icon');
+  const galleryEls = document.querySelectorAll('.gallery-img');
   const popperInstance = Popper.createPopper(shareButtonEl, tooltipEl, {
     placement: 'top',
     strategy: 'fixed',
@@ -77,6 +78,37 @@
           tooltipEl.removeAttribute('data-show');
           popperInstance.update();
         }, 2000);
+      });
+    });
+  }
+
+
+  if (galleryEls) {
+    galleryEls.forEach((galleryEl, index) => {
+
+      galleryEl.addEventListener('click', (event) => {
+        const backdropEl = window.document.createElement("div")
+        window.document.body.appendChild(backdropEl);
+        backdropEl.classList.add("backdrop")
+
+        const viewerEl = window.document.createElement("div")
+        window.document.body.appendChild(viewerEl);
+        viewerEl.classList.add("viewer")
+
+        const viewerImgEl = window.document.createElement("img")
+        viewerImgEl.classList.add("viewer-img")
+        viewerEl.appendChild(viewerImgEl)
+        viewerImgEl.src = galleryEl.src
+
+        document.body.classList.add("overflow-hidden")
+
+        viewerEl.addEventListener('click', (event) => {
+          if (!viewerImgEl.contains(event.target)) {
+            backdropEl.remove()
+            viewerEl.remove()
+            document.body.classList.remove("overflow-hidden")
+          }
+        });
       });
     });
   }
