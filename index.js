@@ -9,9 +9,11 @@
   const copyButtonEls = document.querySelectorAll('.button-copy-icon');
   const popperInstance = Popper.createPopper(shareButtonEl, tooltipEl, {
     placement: 'top',
+    strategy: 'fixed',
   });
   const popperInstance2 = Popper.createPopper(shareIconButtonEl, tooltipEl2, {
     placement: 'top',
+    strategy: 'fixed',
   });
 
   const showTooltip = (isIconButton) => {
