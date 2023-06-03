@@ -399,13 +399,31 @@ h2 {
 }
 
 .dialog-wrapper {
-  color: var(--main-color);
-  border: none;
+  display: none;
+  z-index: 100000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.dialog-container {
+  border-radius: 20px;
   background-image: url("./assets/paper-bg-modal.webp");
   background-size: cover;
-  position: relative;
+  color: var(--main-color);
   width: 80%;
-  border-radius: 20px;
+  max-width: 500px;
+  padding: 0 2rem;
+  position: relative;
 }
 
 .close-btn {
@@ -457,8 +475,6 @@ h2 {
   left: 0;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(2px);
-  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;

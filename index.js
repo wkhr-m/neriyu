@@ -4,6 +4,7 @@
   const tooltipEl = document.querySelector('.tooltip_1');
   const tooltipEl2 = document.querySelector('.tooltip_2')
   const dialogEl = document.querySelector('#dialog');
+  const dialogContainerEl = document.querySelector('.dialog-container');
   const modalTriggerEl = document.querySelector('.modal-trigger');
   const closeButtonEl = document.querySelector('.close-btn');
   const copyButtonEls = document.querySelectorAll('.button-copy-icon');
@@ -53,13 +54,33 @@
     sharelink(event, true)
   );
 
+  let backdropEl = null;
+
+  const closeDialog = () => {
+    backdropEl.remove()
+    dialogEl.classList.remove("show")
+    document.body.classList.remove("overflow-hidden")
+    backdropEl = null
+  }
 
   if (modalTriggerEl) {
     modalTriggerEl.addEventListener('click', () => {
-      dialogEl.showModal();
+      backdropEl = window.document.createElement("div")
+      window.document.body.appendChild(backdropEl);
+      backdropEl.classList.add("backdrop")
+
+      dialogEl.classList.add("show")
+
+      document.body.classList.add("overflow-hidden")
+
+      dialogEl.addEventListener('click', (event) => {
+        if (!dialogContainerEl.contains(event.target)) {
+          closeDialog();
+        }
+      });
     });
     closeButtonEl.addEventListener('click', () => {
-      dialogEl.close();
+      closeDialog();
     });
 
     copyButtonEls.forEach((copyButtonEl, index) => {
