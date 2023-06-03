@@ -4,7 +4,7 @@
   const tooltipEl = document.querySelector('.tooltip_1');
   const tooltipEl2 = document.querySelector('.tooltip_2')
   const dialogEl = document.querySelector('#dialog');
-  const modelTriggerEl = document.querySelector('.modal-trigger');
+  const modalTriggerEl = document.querySelector('.modal-trigger');
   const closeButtonEl = document.querySelector('.close-btn');
   const copyButtonEls = document.querySelectorAll('.button-copy-icon');
   const popperInstance = Popper.createPopper(shareButtonEl, tooltipEl, {
@@ -49,28 +49,33 @@
   shareIconButtonEl.addEventListener('click', (event) =>
     sharelink(event, true)
   );
-  modelTriggerEl.addEventListener('click', () => {
-    dialogEl.showModal();
-  });
-  closeButtonEl.addEventListener('click', () => {
-    dialogEl.close();
-  });
-  copyButtonEls.forEach((copyButtonEl, index) => {
-    const tooltipEl = document.querySelector(`.tooltip_${index + 3}`);
-    const popperInstance = Popper.createPopper(copyButtonEl, tooltipEl, {
-      placement: 'top',
-      strategy: 'fixed',
+
+
+  if (modalTriggerEl) {
+    modalTriggerEl.addEventListener('click', () => {
+      dialogEl.showModal();
+    });
+    closeButtonEl.addEventListener('click', () => {
+      dialogEl.close();
     });
 
-    copyButtonEl.addEventListener('click', (event) => {
-      cripborad(event.currentTarget.title)
+    copyButtonEls.forEach((copyButtonEl, index) => {
+      const tooltipEl = document.querySelector(`.tooltip_${index + 3}`);
+      const popperInstance = Popper.createPopper(copyButtonEl, tooltipEl, {
+        placement: 'top',
+        strategy: 'fixed',
+      });
 
-      tooltipEl.setAttribute('data-show', '');
-      popperInstance.update();
-      setTimeout(() => {
-        tooltipEl.removeAttribute('data-show');
+      copyButtonEl.addEventListener('click', (event) => {
+        cripborad(event.currentTarget.title)
+
+        tooltipEl.setAttribute('data-show', '');
         popperInstance.update();
-      }, 2000);
+        setTimeout(() => {
+          tooltipEl.removeAttribute('data-show');
+          popperInstance.update();
+        }, 2000);
+      });
     });
-  });
+  }
 })();
