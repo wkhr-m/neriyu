@@ -44,15 +44,13 @@ main {
 
 section {
   contain: content;
-  scroll-snap-align: start;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 2rem 2rem;
   box-sizing: border-box;
   margin: 0;
   background-image: url("./assets/paper-bg.jpg");
@@ -141,6 +139,8 @@ h2 {
 .top {
   gap: 6%;
   position: relative;
+  height: 100vh;
+  padding: 0 2rem;
 }
 
 .i18n {
@@ -172,6 +172,10 @@ h2 {
   background-image: url('./assets/btn-lang-selected.webp');
 }
 
+.top {
+  height: 100vh;
+}
+
 .top-title {
   margin: 0;
   font-size: 2rem;
@@ -195,7 +199,7 @@ h2 {
 }
 
 .msg-img {
-  max-height: 10vh;
+  max-width: 30vw;
 }
 
 .msg-expired {
@@ -215,8 +219,8 @@ h2 {
 
 .event-img {
   margin: 2rem 0;
-  height: 30vh;
-  max-width: 80%;
+  width: 100%;
+  max-width: 500px;
 }
 
 .location-name {
@@ -308,7 +312,6 @@ h2 {
   flex-direction: column;
   position: relative;
   padding-bottom: 48px;
-  height: calc(100vh - 48px);
 }
 
 .footer-text {

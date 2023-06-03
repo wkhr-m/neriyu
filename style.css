@@ -367,15 +367,13 @@ main {
 
 section {
   contain: content;
-  scroll-snap-align: start;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 2rem 2rem;
   box-sizing: border-box;
   margin: 0;
   background-image: url("./assets/paper-bg.webp");
@@ -446,6 +444,8 @@ h2 {
 .top {
   gap: 6%;
   position: relative;
+  height: 100vh;
+  padding: 0 2rem;
 }
 
 .i18n {
@@ -488,6 +488,7 @@ h2 {
   justify-content: space-around;
 }
 
+
 .top-img {
   object-fit: cover;
   width: 20%;
@@ -506,7 +507,7 @@ h2 {
 }
 
 .msg-img {
-  max-height: 10vh;
+  max-width: 30vw;
 }
 
 .msg-expired {
@@ -533,7 +534,8 @@ h2 {
 
 .event-img {
   margin: 2rem 0;
-  height: 20vh;
+  width: 100%;
+  max-width: 500px;
 }
 
 .event-explain {
@@ -597,7 +599,6 @@ h2 {
   flex-direction: column;
   position: relative;
   padding-bottom: 48px;
-  height: calc(100vh - 48px);
 }
 
 .footer-text {
