@@ -602,6 +602,16 @@ h2 {
   text-align: start;
 }
 
+.location-kome {
+  padding-inline-start: 1rem;
+  list-style-type: "※";
+}
+
+.location-define {
+  list-style: none;
+  padding-inline: 0;
+}
+
 .footer {
   display: flex;
   justify-content: center;

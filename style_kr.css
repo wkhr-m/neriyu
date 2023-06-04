@@ -244,6 +244,11 @@ h2 {
   max-width: 500px;
 }
 
+.location-information {
+  text-align: start;
+  width: 100%;
+}
+
 .location-name {
   font-size: 1.4rem;
   margin-bottom: 1rem;
