@@ -35,11 +35,20 @@
         .writeText(value)
         .then(function () { });
     } else {
-      const input = document.createElement('input');
+      const input = document.createElement('textarea');
       input.type = 'hidden';
       document.body.appendChild(input);
       input.value = value;
-      input.select();
+      if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
+        const range = document.createRange();
+        range.selectNodeContents(input);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        input.setSelectionRange(0, 999999);
+      } else {
+        input.select();
+      }
       document.execCommand('copy');
       document.body.removeChild(input);
     }
