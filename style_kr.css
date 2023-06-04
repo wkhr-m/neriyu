@@ -262,11 +262,6 @@ h2 {
   font-size: 0.8rem;
 }
 
-.location-link {
-  color: var(--third-color);
-  margin: 0 0.4rem;
-}
-
 .location-subtitle {
   box-sizing: border-box;
   display: flex;
