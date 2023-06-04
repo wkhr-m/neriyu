@@ -385,10 +385,16 @@ section {
   font-weight: 400;
 }
 
-h1,
-h2 {
+h1 {
   font-family: 'East Sea Dokdo', cursive;
   margin: 0 0 1rem;
+  font-weight: 400;
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-family: 'East Sea Dokdo', cursive;
+  margin: 3rem 0 1rem;
   font-weight: 400;
   font-size: 3.6rem;
 }
