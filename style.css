@@ -475,7 +475,7 @@ h2 {
   background-size: 100% auto;
   background-repeat: no-repeat;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   font-size: 1.4rem;
 }
