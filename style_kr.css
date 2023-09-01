@@ -378,7 +378,6 @@ h2 {
   padding: 4px 8px;
   border-radius: 4px;
   transition: opacity 0.3s ease-in-out;
-  z-index: 100000;
 }
 
 .tooltip[data-show] {
