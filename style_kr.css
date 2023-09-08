@@ -426,7 +426,7 @@ h2 {
   color: var(--main-color);
   width: 80%;
   max-width: 500px;
-  padding: 0 2rem;
+  padding: 2rem;
   position: relative;
 }
 
